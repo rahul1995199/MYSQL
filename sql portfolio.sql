@@ -1,10 +1,13 @@
 use movie_db
 select * from imdb_top_1000;
 show tables;
+
 select star1, star2, star3, star4 from imdb_top_1000;
+
 DESCRIBE imdb_top_1000;
 rename table imdb_top_1000 to imdb_top;
 select series_title from imdb_top where Released_year = 1994;
+
 select * from imdb_top where released_year = 2003;
 select * from imdb_top limit10
 select certificate, count(*) from imdb_top group by certificate having certificate = 'U';
